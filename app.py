@@ -10,3 +10,10 @@ def hello_world():
 
 if __name__=="__main__":
     app.run()
+
+@app.route('/SayHello')
+def sayHell():
+    greeting = {
+        "greeting":"Hi!"
+    }
+    return jsonify(greeting)
